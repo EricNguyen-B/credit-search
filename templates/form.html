@@ -1,69 +1,10 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CreditSearch</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
-        <!-- Boxicons CDN Link -->
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <div class="sidebar">
-            <div class="logocontent">
-                <div class="logo">
-                    <i class='bx bx-credit-card'></i>
-                    <div class="logo_name">CreditSearch</div>
-                </div>
-                <i class='bx bx-menu' id="btn"></i>
-            </div>
+<h1>Home: Welcome to Credit-Search</h1>
+<link href="{{ url_for('static', filename='stylesheets.styles.css')}}" />
+<a href="/" id="hometitle">Home</a>
+<a href="/templates/search.html">Search</a>
+<a href="/templates/profile.html">Profile</a>
+<a href="/templates/chart_testing.html">Chart</a>
 
-            <ul class="nav_list" id="menu">
-                <li>
-                    <i class='bx bx-search' ></i>
-                    <input type="text" placeholder="Search...">
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-home-circle' ></i>
-                        <span class="links_name">Home</span>
-                    </a>
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-search' ></i>
-                        <span class="links_name">Search</span>
-                    </a>
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-user-circle' ></i>
-                        <span class="links_name">User</span>
-                    </a>
-                    <!-- <span class="tooltip">Dashboard</span> -->
-                </li>
-            </ul>
-            <div class="profile_content">
-                <div class="profile">
-                    <div class="profile_details">
-                        <!-- <img src="{{profile_picture}}" alt="profile_avatar"> -->
-                        <div class="name_job">
-                            <div class="name">Jane Doe</div>
-                            <div class="job">College Student</div>
-                        </div>
-                    </div>
-                    <i class='bx bx-log-out' id="log_out"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- <img src="{{profile_picture}}"> -->
-        <a href="/" id="hometitle">Home</a>
-        <a href="/templates/search.html">Search</a>
-        <a href="/templates/profile.html">Profile</a>
-    </body>
-</html>
 
 
 

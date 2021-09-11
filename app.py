@@ -34,6 +34,10 @@ def search():
 def profile():
     return render_template("profile.html")
 
+@app.route("/templates/chart_testing.html")
+def chart_testing():
+    return render_template("chart_testing.html")
+
 @app.route("/templates/cards_images.html")
 def cards_images():
     #first_name = request.form.get("fname")
