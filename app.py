@@ -4,13 +4,19 @@ import os
 
 app = Flask(__name__)
 
+#creates folder of images from /static/images directory
 picFolder = os.path.join('static','images')
-
+#lets picFolder variable contain images
 app.config['UPLOAD_FOLDER'] = picFolder
 
+#Home Directory Path
 @app.route("/")
 def home():
-    return render_template("form.html")
+    #Create profile_picture variable from profile.jpg
+    profile_picture = os.path.join(app.config['UPLOAD_FOLDER'], 'profile.jpg')
+    # return render_template("form.html", profile_image = profile_picture)
+    message="Hello World"
+    return render_template("form.html", message=message, profile_picture=profile_picture)
 
 @app.route("/templates/search.html", methods = ["GET", "POST"])
 def search():
