@@ -2,3 +2,36 @@
 <a href="/">Home</a>
 <a href="/templates/search.html">Search</a>
 <a href="/templates/profile.html">Profile</a>
+
+<form action = "{{url_for("search")}}" method = "post">
+    <div class="custom-select1" style="width:200px;">
+        <select name = "benefit">
+          <option value="0">Select Benefits:</option>
+          <option value="Low Interest">Low Interest</option>
+          <option value="Cash Back">Cash Back</option>
+          <option value="Hotel and Travel Points">Hotel and Travel Points</option>
+          <option value="Retail Rewards">Retail Rewards</option>
+          <option value="Balance Transfer">Balance Transfer</option>
+          <option value="Gas Points">Gas Points</option>
+          <option value="Airline Miles">Airline Miles</option>
+        </select>
+      </div>
+    
+      <div class="custom-select2" style="width:200px;">
+        <select name = "occupation">
+          <option value="0">Select Occupation:</option>
+          <option value="Student">Student</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+    
+      <div class="custom-select3" style="width:200px;">
+        <select name = "interest">
+          <option value="0">Select Interests:</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+        </select>
+      </div>
+
+    <button class="button execute" name="submit" value="submit">Submit</button>
+</form>
