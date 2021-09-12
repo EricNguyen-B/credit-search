@@ -27,9 +27,11 @@ cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10]
 def home():
     #Create profile_picture variable from profile.jpg
     profile_picture = os.path.join(app.config['UPLOAD_FOLDER'], 'profile.jpg')
+    
     # return render_template("form.html", profile_image = profile_picture)
     message="Hello World"
     return render_template("form.html", message=message, profile_picture=profile_picture)
+    
 
 @app.route("/templates/search.html", methods = ["GET", "POST"])
 def search():
@@ -53,13 +55,7 @@ def profile():
 def chart_testing():
     return render_template("chart_testing.html")
 
-@app.route("/templates/cards_images.html")
-def cards_images():
-    #first_name = request.form.get("fname")
-    #last_name = request.form.get("lname")
-    #credit_score = request.form.get("creditsore")
-    photo_file = os.path.join(app.config['UPLOAD_FOLDER'], 'chase_sapphire_preferred.jpg','discover_it_secured','citi_double_cash_card')
-    return render_template("cards_images.html", user_image = photo_file)
+
 
 if __name__ == "__main__":
     app.run() 
