@@ -9,6 +9,17 @@ picFolder = os.path.join('static','images')
 #lets picFolder variable contain images
 app.config['UPLOAD_FOLDER'] = picFolder
 
+card1 = [1, 'Hotel & Travel Points', 'Student', 'User Rated 5/5', 'Chase Sapphire Preferred Card', 300, 629]
+card2 = [2, 'Cash Back', 'Student', 'Low/No Annual Fee', 'Wells Fargo Active Cash Card', 630, 689]
+card3 = [3, 'Cash Back', 'Student', 'High Reward Rate', 'Citi Custom Cash Card', 630, 689]
+card4 = [4, 'Gas Points', 'Student', 'High Reward Rate', 'Blue Cash Preferred Cash from American Express', 690, 719]
+card5 = [5, 'Hotel & Travel Points', 'Business', 'Low/No Annual Fee', 'Chase Freedom Unlimited', 720, 850]
+card6 = [6, 'Retail Rewards', 'Business', 'High Reward Rate', 'Citi Double Cash Card', 690, 719]
+card7 = [7, 'Low Interest', 'Business', 'User Rated 5/5', 'Discover it Cash Back', 630, 689]
+card8 = [8, 'Retal Rewards', 'Business', 'Low/No Annual Fee', 'Capital One Venture Rewards Credit Card', 300, 629]
+card9 = [9, 'Balance Transfer', 'Student', 'High Reward Rate', 'Capital One SavorOne Cash Rewards Credit Card', 630, 689]
+card10 = [10, 'Airline Miles', 'Business', 'User Rated 5/5', 'U.S. Bank Altitude Connect Visa Signature Card', 720, 850]
+
 #Home Directory Path
 @app.route("/")
 def home():
