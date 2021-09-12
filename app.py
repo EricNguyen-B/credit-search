@@ -39,21 +39,29 @@ def search():
         common_benefits = request.form.get("benefit")
         occupation = request.form.get("occupation")
         other =  request.form.get("other")
+        chase_card = os.path.join(app.config['UPLOAD_FOLDER'], 'chase_sapphire_preferred.jpg')
+        discover_card = os.path.join(app.config['UPLOAD_FOLDER'], 'discover_it_secured.jpg')
+        citi_card = os.path.join(app.config['UPLOAD_FOLDER'], 'citi_double_cash_card.jpg')
+        profile_picture = os.path.join(app.config['UPLOAD_FOLDER'], 'profile.jpg')
         credit_score = 730
-
-        for card in cards:
-            if (card[2] == common_benefits or card[3] == occupation or card[4] == other) and (credit_score >= card[6] and credit_score <= card[7]):
-                return "PLz complete this if statement"
-        return "Your benefits are " + common_benefits + "\n" + "Your occupation is " + occupation + "\n" + "Your occupation is " + other
+        # for card in cards:
+        #     if (card[2] == common_benefits or card[3] == occupation or card[4] == other) and (credit_score >= card[6] and credit_score <= card[7]):
+        #         return render_template("search.html", chase_card = chase_card, profile_picture=profile_picture )
+        #     else:
+        #         return render_template("search.html", discover_card=discover_card, citi_card=citi_card, profile_picture=profile_picture )
+        # return "Your benefits are " + common_benefits + "\n" + "Your occupation is " + occupation + "\n" + "Your occupation is " + other
+        return render_template("cards_images.html")
     return render_template("search.html")
 
 @app.route("/templates/profile.html")
 def profile():
-    return render_template("profile.html")
+    profile_picture = os.path.join(app.config['UPLOAD_FOLDER'], 'profile.jpg')
+    return render_template("profile.html", profile_picture=profile_picture)
 
 @app.route("/templates/chart_testing.html")
 def chart_testing():
-    return render_template("chart_testing.html")
+    profile_picture = os.path.join(app.config['UPLOAD_FOLDER'], 'profile.jpg')
+    return render_template("chart_testing.html", profile_picture=profile_picture)
 
 
 

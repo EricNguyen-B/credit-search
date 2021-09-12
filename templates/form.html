@@ -1,12 +1,6 @@
-<div class="credit">
-    <h1 id="home_title">Credit Score</h1>
-    <h1 id="credit_score">730</h1>
-</div>
-<img id="avatar_picture" src="{{profile_picture}}">
-<link href="{{ url_for('static', filename='stylesheets.styles.css')}}" />
-
 <html>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='stylesheets.styles.css')}}" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <body>
         <canvas id="homeChart" style="width:100%;max-width:800px"></canvas>
@@ -29,6 +23,11 @@
       },
     });
     </script>
+    <div class="credit">
+        <h1 id="home_title">Credit Score</h1>
+        <h1 id="credit_score">730</h1>
+    </div>
+    <img id="avatar_picture" src="{{profile_picture}}">
     <head>
         <meta charset="UTF-8">
         <title>CreditSearch</title>

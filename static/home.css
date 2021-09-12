@@ -227,7 +227,6 @@ body {
     position: absolute;
     top: 11%;
     margin-left: 400px;
-    
 }
 
 .custom-select3 {
@@ -259,4 +258,10 @@ select {
     list-style: none; 
     padding: 0;
     font-family: 'Merriweather', serif;
+}
+
+#card_info {
+    position: absolute;
+    left: 50%;
+    right: 30%;
 }

@@ -1,6 +1,4 @@
-
-<h1>Testing</h1>
-
+  <html>
   <head>
     <meta charset="UTF-8">
     <title>CreditSearch</title>
@@ -10,50 +8,58 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
 <body>
-    <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <i class='bx bx-credit-card'></i>
-                <div class="logo_name">CreditSearch</div>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
+  <div class="sidebar">
 
-        <ul class="nav_list" id="menu">
-            <li>
-                <a href="/">
-                    <i class='bx bx-home-circle' ></i>
-                    <span class="links_name">Home</span>
-                </a>
-                <!-- <span class="tooltip">Dashboard</span> -->
-            </li>
-            <li>
-                <a href="/templates/search.html">
-                    <i class='bx bx-search' ></i>
-                    <span class="links_name">Search</span>
-                </a>
-                <!-- <span class="tooltip">Dashboard</span> -->
-            </li>
-            <li>
-                <a href="/templates/chart_testing.html">
-                    <i class='bx bx-money'></i>
-                    <span class="links_name">Finances</span>
-                </a>
-                <!-- <span class="tooltip">Dashboard</span> -->
-            </li>
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="{{profile_picture}}" alt="profile_avatar">
-                    <div class="name_job">
-                        <div class="name">Jane Doe</div>
-                        <div class="job">College Student</div>
-                    </div>
+    <div class="logo_content">
+        <div class="logo">
+            <i class='bx bx-credit-card'></i>
+            <div class="logo_name">Credit Search</div>
+        </div>
+    </div>
+
+
+    <ul class="nav_list" id="menu">
+
+        <li>
+            <a href="/">
+                <i class='bx bx-home-circle' ></i>
+                <span class="links_name">Home</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="/templates/search.html">
+                <i class='bx bx-search' ></i>
+                <span class="links_name">Search</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="/templates/chart_testing.html">
+                <i class='bx bx-money'></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+        </li>
+
+
+    </ul>
+
+
+
+    <div class="profile_content">
+        <div class="profile">
+            <div class="profile_details">
+              <img src="/static/images/profile.jpg" alt="profile_avatar">
+                <div class="name_job">
+                    <div class="name">Jane Doe</div>
+                    <div class="job">College Student</div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     
 <div class="main">
   <form action = "{{url_for("search")}}" method = "post">
@@ -89,9 +95,12 @@
   
       <button class="button_execute" name="submit" value="submit">Submit</button>
 <!-- HAItHAM I GOT THE SHIT DOWN THERE IT WORKS NO CAP AND I DON'T HAVE THE OTHER PHOTOS -->
-      <h1><img src="/static/images/chase_sapphire _preferred.jpg" alt = "kek1"></h1>
+      <!-- <h1><img src="/static/images/chase_sapphire _preferred.jpg" alt = "kek1"></h1>
       <h2><img src="/static/images/discover_it_secured.jpg" alt = "kek2"></h2>
-      <h2><img src="/static/images/citi_double_cash_card.jpg" alt = "kek3"></h2>
+      <h2><img src="/static/images/citi_double_cash_card.jpg" alt = "kek3"></h2> -->
+
+      <!-- <img src="{{chase_card}}">
+      <img src="{{discover_card}}"> -->
             
         
     
@@ -99,3 +108,4 @@
 </body>
 
 </div>
+</html>

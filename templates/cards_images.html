@@ -1,2 +1,62 @@
-<h1>suck</h1>
-<img src="{{ profile_picture }}" alt="profile_avatar">
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
+
+<div class="sidebar">
+
+    <div class="logo_content">
+        <div class="logo">
+            <i class='bx bx-credit-card'></i>
+            <div class="logo_name">Credit Search</div>
+        </div>
+    </div>
+
+
+    <ul class="nav_list" id="menu">
+
+        <li>
+            <a href="/">
+                <i class='bx bx-home-circle' ></i>
+                <span class="links_name">Home</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="/templates/search.html">
+                <i class='bx bx-search' ></i>
+                <span class="links_name">Search</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="/templates/chart_testing.html">
+                <i class='bx bx-money'></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+        </li>
+
+
+    </ul>
+
+
+
+    <div class="profile_content">
+        <div class="profile">
+            <div class="profile_details">
+                <img src="/static/images/profile.jpg" alt="profile_avatar">
+                <div class="name_job">
+                    <div class="name">Jane Doe</div>
+                    <div class="job">College Student</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="card_info">
+    <h1>This is your best fit card:</h1>
+    <img src="/static/images/citi_double_cash_card.jpg" alt="profile_avatar">
+    <p>
+        The value in this card is pretty much all in its stellar rewards rate: 2% cash back on purchases — 1% when you buy something, and 1% when you pay it off.  
+        With the Citi® Double Cash Card – 18 month BT offer, earning cash back is simple and lucrative. If you're looking for a low-hassle cash back card to use daily, this is it.
+    </p>
+</div>
