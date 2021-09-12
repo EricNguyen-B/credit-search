@@ -1,3 +1,216 @@
 #menu li{
     list-style-type: none;
 }
+
+#home_title {
+    position:absolute;
+    font-size: 40px;
+    top:13%;
+    left:55%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left: 160px; /*this is half of width of your div*/
+}
+
+#credit_score {
+    position:absolute;
+    font-size: 70px;
+    color: #2a9d8f;
+    top:13%;
+    left:69%;
+    margin-top:50px; /* this is half the height of your div*/  
+}
+
+
+#avatar_picture {
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    position:absolute;
+    top:13%;
+    left:55%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-480px; /*this is half of width of your div*/
+}
+
+#myChart {
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    position:absolute;
+    top:13%;
+    left:55%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-480px; /*this is half of width of your div*/
+}
+
+body {
+    position: relative; 
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #2a9d8f;
+    padding: 6px 14px;
+}
+
+.sidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.logo_content .logo {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 0px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.sidebar ul li a:hover {
+    color: #2a9d8f;
+    background: #fff;
+}
+
+.sidebar ul li a i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .profile_content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar .profile_content .profile {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+
+.profile_content .profile .profile_details {
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 30px;
+}
+
+.profile .profile_details .name_job {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.profile .profile_details .job {
+    font-size: 15px;
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 78%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 12px;
+}
+
+.links_name {
+    font-size: 20px;
+}
+
+.main {
+    margin-left: 360px;
+}
+
+.custom-select1{
+    position: absolute;
+    top: 12%;
+}
+
+.custom-select2 {
+    position: absolute;
+    top: 11%;
+    margin-left: 400px;
+    
+}
+
+.custom-select3 {
+    position: absolute;
+    top: 11%;
+    margin-left: 700px;
+}
+
+.button_execute {
+    position: absolute;
+    bottom: 70%;
+    margin-left: 800px;
+}
+
+select {
+    margin: 50px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_57073.png&f=1&nofb=1) 96% / 15% no-repeat #EEE;
+  }

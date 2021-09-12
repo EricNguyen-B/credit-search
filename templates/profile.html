@@ -1,7 +1,56 @@
-<h3>Profile</h3>
-<link rel="stylesheet" href="/styles/style.css">
-<div class="sidenav">
-    <a href="/">Home</a>
-    <a href="/templates/search.html">Search</a>
-    <a href="/templates/profile.html">Profile</a>
-  </div>
+<html>
+  <h3>Profile</h3>
+  <link rel="stylesheet" href="/styles/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>CreditSearch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-credit-card'></i>
+                <div class="logo_name">CreditSearch</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+  
+        <ul class="nav_list" id="menu">
+            <li>
+                <a href="/">
+                    <i class='bx bx-home-circle' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="/templates/search.html">
+                    <i class='bx bx-search' ></i>
+                    <span class="links_name">Search</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="/templates/chart_testing.html">
+                    <i class='bx bx-money'></i>
+                    <span class="links_name">Finances</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="{{profile_picture}}" alt="profile_avatar">
+                    <div class="name_job">
+                        <div class="name">Jane Doe</div>
+                        <div class="job">College Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</html>
