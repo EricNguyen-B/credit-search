@@ -1,10 +1,11 @@
-#menu li{
+/* #menu li{
     list-style-type: none;
-}
+} */
 
 #home_title {
     position:absolute;
     font-size: 40px;
+    font-family: 'Merriweather', serif;
     top:13%;
     left:55%;
     margin-top:-50px; /* this is half the height of your div*/  
@@ -52,6 +53,7 @@ body {
 
 .sidebar {
     position: fixed;
+    box-shadow: 10px 10px grey;
     top: 0;
     left: 0;
     height: 100%;
@@ -70,22 +72,36 @@ body {
 }
 
 .logo_content .logo {
+    background-color: #9c6644;
+    box-shadow: 4px 10px rgb(48, 46, 46);
+    border-radius: 6px;
+    margin-top: 10px;
     font-size: 28px;
     margin-right: 5px;
 }
 
 .logo_content .logo .logo_name {
-    margin-left: 15px;
-    font-size: 20px;
+    background-color: #9c6644;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 6px;
+    font-size: 28px;
     font-weight: 400;
 }
 
+.logo_content {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    
+}
+
+/* hamburger menu */
 .sidebar #btn {
     position: absolute;
     color: #fff;
     left: 90%;
     top: 6px;
-    font-size: 30px;
+    font-size: 23px;
     height: 50px;
     width: 50px;
     text-align: center;
@@ -93,17 +109,19 @@ body {
     transform: translateX(-50%);
 }
 
+/* the height between each tab */
 .sidebar ul li {
     position: relative;
-    height: 50px;
+    height: 150px;
     width: 100%;
-    margin: 0 0px;
+    margin: 0 10px;
     list-style: none;
     line-height: 50px;
 }
 
 .sidebar ul li a {
     color: #fff;
+    font-size: 30px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -214,3 +232,9 @@ select {
     appearance: none;
     background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_57073.png&f=1&nofb=1) 96% / 15% no-repeat #EEE;
   }
+
+.nav_list {
+    list-style: none; 
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}

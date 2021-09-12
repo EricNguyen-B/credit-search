@@ -6,43 +6,60 @@
 <link href="{{ url_for('static', filename='stylesheets.styles.css')}}" />
 
 <html>
+
     <head>
         <meta charset="UTF-8">
         <title>CreditSearch</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
         <!-- Boxicons CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Merriweather Google Font Link -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
     </head>
+
     <body>
+
         <div class="sidebar">
+
             <div class="logo_content">
                 <div class="logo">
                     <i class='bx bx-credit-card'></i>
-                    <div class="logo_name">CreditSearch</div>
+                    <div class="logo_name">Credit Search</div>
                 </div>
                 <i class='bx bx-menu' id="btn"></i>
             </div>
 
+
             <ul class="nav_list" id="menu">
+
                 <li>
                     <a href="/">
                         <i class='bx bx-home-circle' ></i>
                         <span class="links_name">Home</span>
                     </a>
                 </li>
+
+
                 <li>
                     <a href="/templates/search.html">
                         <i class='bx bx-search' ></i>
                         <span class="links_name">Search</span>
                     </a>
                 </li>
+
+
                 <li>
                     <a href="/templates/chart_testing.html">
                         <i class='bx bx-money'></i>
-                        <span class="links_name">Finances</span>
+                        <span class="links_name">Dashboard</span>
                     </a>
                 </li>
+
+
             </ul>
+
+
+
             <div class="profile_content">
                 <div class="profile">
                     <div class="profile_details">
