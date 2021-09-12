@@ -1,19 +1,20 @@
 <div class="credit">
-    <h1 id="home_title">Credit-Search</h1>
+    <h1 id="home_title">Credit Score</h1>
     <h1 id="credit_score">730</h1>
 </div>
 <img id="avatar_picture" src="{{profile_picture}}">
 <link href="{{ url_for('static', filename='stylesheets.styles.css')}}" />
 
 <html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <body>
-    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+        <canvas id="homeChart" style="width:100%;max-width:800px"></canvas>
     <script>
     var xValues = [1,2,3,4,5,6,7,8,9,10,11,12];
     var yValues = [32,15,61,78,109,140,179,134,159,274,175,207];
     
-    new Chart("myChart", {
+    new Chart("homeChart", {
       type: "line",
       data: {
         labels: xValues,
@@ -47,7 +48,6 @@
                     <i class='bx bx-credit-card'></i>
                     <div class="logo_name">Credit Search</div>
                 </div>
-                <i class='bx bx-menu' id="btn"></i>
             </div>
 
 

@@ -6,7 +6,7 @@
     position:absolute;
     font-size: 40px;
     font-family: 'Merriweather', serif;
-    top:13%;
+    top:18%;
     left:55%;
     margin-top:-50px; /* this is half the height of your div*/  
     margin-left: 160px; /*this is half of width of your div*/
@@ -16,16 +16,24 @@
     position:absolute;
     font-size: 70px;
     color: #2a9d8f;
+    align-items: center;
     top:13%;
     left:69%;
     margin-top:50px; /* this is half the height of your div*/  
 }
 
+.credit {
+    right: 20%
+}
 
 #avatar_picture {
-    border-radius: 20px;
+    border: 1px solid rgb(41, 38, 38);
+    border-color: rgb(41, 38, 38);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(41, 38, 38);
     width: 350px;
-    height: auto;
+    overflow: hidden;
     position:absolute;
     top:13%;
     left:55%;
@@ -39,6 +47,17 @@
     height: auto;
     position:absolute;
     top:13%;
+    left:55%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-480px; /*this is half of width of your div*/
+}
+
+#homeChart {
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    position:absolute;
+    top:50%;
     left:55%;
     margin-top:-50px; /* this is half the height of your div*/  
     margin-left:-480px; /*this is half of width of your div*/
@@ -166,15 +185,18 @@ body {
     object-fit: cover;
     border-radius: 12px;
     margin-left: 30px;
+    bottom: 50px;
 }
 
 .profile .profile_details .name_job {
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
+    bottom: 50px;
 }
 
 .profile .profile_details .job {
-    font-size: 15px;
+    font-size: 13px;
+    bottom: 50px;
 }
 
 .profile #log_out{
